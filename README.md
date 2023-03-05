@@ -1,0 +1,3 @@
+# Personal-Projects
+These are some of the projects I worked on before withdrawling from Linear Data Structures in Fall of 2022, I stayed in the class right until the November withdrawl date
+came up. This means that I completed a fair amount of the Labs and assignments but never finished the course. SO this is a branch that shows all of those aswell...
