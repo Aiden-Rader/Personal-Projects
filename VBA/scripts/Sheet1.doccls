@@ -1,0 +1,21 @@
+﻿Private Sub Workbook_Open()
+
+    Dim table As ListObject
+    Dim tableRange As Range
+    Dim ws As Worksheet
+    
+    ' Specify the sheet name where the table is located
+    Set ws = ThisWorkbook.Worksheets("Guess the Number!")
+    
+    ' Specify the table name
+    Set table = ws.ListObjects("Num")
+    
+    ' Check if the table has data
+    If table.ListRows.Count > 0 Then
+        ' Clear the table data and formatting
+        Set tableRange = table.DataBodyRange
+        tableRange.ClearContents
+        tableRange.Interior.Color = xlNone
+    End If
+    
+End Sub
